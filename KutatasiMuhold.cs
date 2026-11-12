@@ -7,7 +7,7 @@ namespace MuholdApp
     internal class KutatasiMuhold: Muhold
     {
         public int MuszerekSzama { get; set; }
-        public KutatasiMuhold(string azonosito,int tomeg,int muszerek) : base(azonosito, tomeg)
+        public KutatasiMuhold(string azonosito,int sulyKg,int muszerek) : base(azonosito, sulyKg)
         {
             MuszerekSzama = muszerek;
         }

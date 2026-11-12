@@ -14,19 +14,23 @@ namespace MuholdApp
             set { 
                 if (value <= 0)
                     {
-                    value = 100;
+                    sulyKg = 100;
                     }
-                } 
+                else
+                {
+                    sulyKg = value;
+                }
+            } 
         }
 
         private static int osszesMuholdSzama;
 
-        public static int OsszesMuholdSzama { get { return osszesMuholdSzama} }
+        public static int OsszesMuholdSzama { get { return osszesMuholdSzama; } }
 
-        public Muhold(string azonsoito,int tomeg)
+        public Muhold(string azonsoito,int sulyKg)
         {
             Azonosito = azonsoito;
-            SulyKg = tomeg;
+            SulyKg = sulyKg;
             osszesMuholdSzama++;
         }
 
